@@ -27,3 +27,4 @@ SELECT @last := LAST_INSERT_ID();
 
 INSERT INTO shirt VALUES 
 (NULL,'dress','orange',@last),(NULL,'polo','red',@last),(NULL,'dress','blue',@last),(NULL,'t-shirt','white',@last);
+
