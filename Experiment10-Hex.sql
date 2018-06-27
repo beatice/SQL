@@ -8,8 +8,8 @@ SELECT X'0G',0X01AF;
 /* Values written using X'val' notation must contain an even number of digits or a syntax error occurs
 To correct the problem, pad the value with a leading zero */
 
-SELECT @s = X'FFF';
-SELECT @s = X'0FFF';
+SELECT @s := X'FFF';
+SELECT @s := X'0FFF';
 
 /* By default, a hexadecimal literal is a binary string, where each pair of hexadecimal digits represents a character */
 SELECT X'4D7953514C', CHARSET(X'4D7953514C');
